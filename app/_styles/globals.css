@@ -16,7 +16,7 @@
     }
 
     .title-1 {
-        @apply flex items-center gap-2 text-3xl font-bold text-gray-800 dark:text-white;
+        @apply flex items-center gap-2 text-xl md:text-3xl font-bold text-gray-800 dark:text-white;
     }
 
     .socialIcon {
