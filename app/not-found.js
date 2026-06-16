@@ -1,4 +1,5 @@
 // app/not-found.jsx
+"use client";
 import Link from "next/link";
 import { FaHome, FaSearch, FaArrowLeft } from "react-icons/fa";
 import { HiOutlineEmojiSad } from "react-icons/hi";
@@ -16,7 +17,7 @@ export default function NotFound() {
                 </div>
 
                 {/* عدد 404 */}
-                <h1 className="text-8xl md:text-9xl font-black text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 mb-4">
+                <h1 className="text-8xl md:text-9xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 mb-4">
                     404
                 </h1>
 
@@ -64,11 +65,11 @@ export default function NotFound() {
                 <div className="mt-12 pt-6 border-t border-gray-200 dark:border-gray-700">
                     <p className="text-sm text-gray-500 dark:text-gray-400">
                         Need help?{" "}
-                        <a
-                            href="/contact"
+                        <Link
+                            href="/#contact"
                             className="text-blue-600 hover:underline">
                             Contact me
-                        </a>
+                        </Link>
                     </p>
                 </div>
             </div>
