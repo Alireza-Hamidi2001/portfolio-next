@@ -8,7 +8,7 @@ export default function About() {
     return (
         <section
             id="about"
-            className=" pt-15 sm:pt-0 min-h-screen grid grid-cols-[auto] grid-rows-[1fr_3fr_1fr] md:grid-cols-[auto_auto_auto] md:grid-rows-1 md:items-center justify-center"
+            className=" pt-15 sm:pt-0 min-h-screen grid grid-cols-[auto] grid-rows-[1fr_3fr_1fr] lg:grid-cols-[auto_auto_auto] lg:grid-rows-1 lg:items-center justify-center"
         >
             <AnimateOnScroll
                 direction="right"
