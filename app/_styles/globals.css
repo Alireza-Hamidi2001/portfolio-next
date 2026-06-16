@@ -1,0 +1,192 @@
+/* globals.css */
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+}
+
+@layer components {
+    .image_gallery {
+        @apply object-cover object-center   hover:scale-110 transition-all duration-500;
+    }
+    .header_menu_item {
+        @apply px-1.5 py-1 sm:px-3 sm:py-2 rounded-full hover:cursor-pointer hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-300;
+    }
+
+    .title-1 {
+        @apply flex items-center gap-2 text-3xl font-bold text-gray-800 dark:text-white;
+    }
+
+    .socialIcon {
+        @apply w-10 h-10 hover:-translate-y-0.5 duration-200 transition-all;
+    }
+    .copyright {
+        font-family: var(--font-coiny), cursive;
+    }
+    .open-sans {
+        font-family: var(--font-open-sans), cursive;
+    }
+}
+
+@layer utilities {
+    .font-caveat {
+        font-family: var(--font-caveat), cursive;
+    }
+    .font-courgette {
+        font-family: var(--font-courgette), cursive;
+    }
+    .font-open-sans {
+        font-family: var(--font-open-sans), cursive;
+    }
+    .font-lime {
+        font-family: var(--font-lime), cursive;
+    }
+    .font-comic {
+        font-family: var(--font-comic), cursive;
+    }
+    .shakeHand {
+        animation: shakeHand 1s infi;
+    }
+    .mask-fade-bottom {
+        mask-image: linear-gradient(
+            to bottom,
+            black 0%,
+            black 50%,
+            transparent 100%
+        );
+        -webkit-mask-image: linear-gradient(
+            to bottom,
+            black 0%,
+            black 50%,
+            transparent 100%
+        );
+    }
+
+    .mask-fade-bottom-strong {
+        mask-image: linear-gradient(
+            to bottom,
+            black 0%,
+            black 30%,
+            transparent 100%
+        );
+        -webkit-mask-image: linear-gradient(
+            to bottom,
+            black 0%,
+            black 30%,
+            transparent 100%
+        );
+    }
+
+    .mask-fade-bottom-soft {
+        mask-image: linear-gradient(
+            to bottom,
+            black 0%,
+            black 70%,
+            transparent 100%
+        );
+        -webkit-mask-image: linear-gradient(
+            to bottom,
+            black 0%,
+            black 70%,
+            transparent 100%
+        );
+    }
+
+    .group:hover .group-hover\:iconContact {
+        animation: iconAnimation 2s infinite;
+        transform: scale(1.5);
+    }
+    .group:hover .group-hover\:iconContact2 {
+        animation: iconAnimation2 3s infinite;
+    }
+    .tapBtn {
+        animation: tapBtn 1s infinite;
+    }
+}
+
+@keyframes iconAnimation2 {
+    0% {
+        left: -60%;
+    }
+    50% {
+        left: 60%;
+    }
+
+    100% {
+        left: -60%;
+    }
+}
+@keyframes iconAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+    75% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes tapBtn {
+    0% {
+        opacity: 1;
+        scale: 1;
+    }
+    50% {
+        opacity: 0.2;
+    }
+}
+@keyframes learnBtn {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.2;
+    }
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.waving-hand {
+    animation: wave 2.5s ease-in-out infinite;
+    transform-origin: bottom center;
+    display: inline-block;
+}
+
+.learn-more-btn {
+    animation: learnBtn 1s ease-in-out infinite;
+}
