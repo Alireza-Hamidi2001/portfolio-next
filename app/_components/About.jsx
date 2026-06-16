@@ -8,13 +8,13 @@ export default function About() {
     return (
         <section
             id="about"
-            className="bg-red-400 pt-15 sm:pt-0 min-h-screen grid grid-cols-[auto] grid-rows-[1fr_3fr_1fr] md:grid-cols-[auto_auto_auto] md:grid-rows-1 md:items-center justify-center"
+            className=" pt-15 sm:pt-0 min-h-screen grid grid-cols-[auto] grid-rows-[1fr_3fr_1fr] md:grid-cols-[auto_auto_auto] md:grid-rows-1 md:items-center justify-center"
         >
             <AnimateOnScroll
                 direction="right"
                 delay={1.1}
                 duration={1}
-                className="bg-teal-400 text-center sm:text-left"
+                className="text-center sm:text-left"
             >
                 <p className="text-lg md:text-2xl text-gray-600 dark:text-gray-300">
                     Hey there
@@ -33,7 +33,7 @@ export default function About() {
                 direction="left"
                 delay={1.1}
                 duration={1}
-                className="bg-teal-400 text-center sm:text-left"
+                className="text-center sm:text-left"
             >
                 <p className="text-6xl md:text-8xl invisible hidden sm:block">
                     .
