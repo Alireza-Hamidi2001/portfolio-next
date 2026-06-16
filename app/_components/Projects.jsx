@@ -11,7 +11,7 @@ function Projects() {
         >
             <AnimatedText
                 text="Projects"
-                className="text-7xl md:text-8xl lg:text-9xl font-bold text-center mb-14 text-gray-800 dark:text-white mask-fade-bottom"
+                className="text-7xl md:text-8xl lg:text-9xl font-bold text-center my-14 text-gray-800 dark:text-white mask-fade-bottom"
                 delay={0.2}
                 duration={0.6}
                 staggerDelay={0.1}
