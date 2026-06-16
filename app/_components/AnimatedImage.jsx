@@ -7,7 +7,7 @@ import { IoHandLeftOutline } from "react-icons/io5";
 export default function AnimatedImage({ imageSrc, altText }) {
     return (
         <motion.div
-            className="relative w-[80vw] h-full md:w-85 md:h-120 mx-auto"
+            className="relative w-[80vw] h-full md:w-85 md:h-120  mx-auto"
             initial={{ opacity: 0, scale: 0.8, rotateY: -180 }}
             animate={{ opacity: 1, scale: 1, rotateY: 0 }}
             transition={{

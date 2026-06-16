@@ -212,7 +212,7 @@ function CertificateImage() {
 
                 {/* images */}
                 <div
-                    className="relative w-75 h-70 lg:w-[55rem] lg:h-[30rem] overflow-hidden rounded-2xl shadow-2xl group cursor-pointer"
+                    className="relative w-75 h-70 sm:w-160 sm:h-90 lg:w-220 lg:h-120 overflow-hidden rounded-2xl shadow-2xl group cursor-pointer"
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                 >

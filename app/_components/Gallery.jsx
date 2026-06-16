@@ -24,7 +24,7 @@ function Gallery() {
                 Other projects overview
             </p>
 
-            <section className="p-0 sm:p-6 lg:p-20 pt-0 grid grid-cols-8 auto-rows-[50px] sm:auto-rows-[70px] md:auto-rows-[120px] gap-1 sm:gap-2">
+            <section className="p-0 sm:p-2 xl:p-20 pt-0 grid grid-cols-8 auto-rows-[45px] sm:auto-rows-[60px] md:auto-rows-[100px] lg:auto-rows-[120px] gap-1 sm:gap-2">
                 <div className="relative col-start-1 col-span-2 row-start-1 row-span-2 overflow-hidden border border-gray-700 dark:border-gray-300 rounded-sm">
                     <Image
                         fill

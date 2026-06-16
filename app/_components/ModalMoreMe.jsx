@@ -40,7 +40,7 @@ export default function ModalMoreMe({ onClose }) {
                 className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/30 backdrop-blur-md overflow-x-hidden"
                 onClick={handleBackdropClick}
             >
-                <div className="relative w-[92vw] sm:w-[85vw] md:w-[75vw] max-w-2xl max-h-[90vh] bg-white dark:bg-zinc-950 border border-white/20 rounded-2xl shadow-2xl overflow-hidden flex flex-col">
+                <div className="relative w-[90vw] sm:w-[80rem] md:w-[50rem] max-w-2xl max-h-[90vh] bg-white dark:bg-zinc-950 border border-white/20 rounded-2xl shadow-2xl overflow-hidden flex flex-col">
                     {/* Header */}
                     <div className="flex items-center justify-between p-3 sm:p-4 md:p-6 pb-2 sm:pb-3 md:pb-0 flex-shrink-0">
                         <div className="inline-block min-w-0">

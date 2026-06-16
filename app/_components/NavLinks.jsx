@@ -1,3 +1,4 @@
+// components/NavLinks.jsx
 "use client";
 
 import AnimateOnScroll from "./AnimateOnScroll";
@@ -34,6 +35,7 @@ function NavLinks() {
             delay: 0.5,
         },
     ];
+
     const scrollToSection = (e, sectionId) => {
         e.preventDefault();
         const element = document.getElementById(sectionId);
@@ -44,8 +46,9 @@ function NavLinks() {
             });
         }
     };
+
     return (
-        <ul className="flex gap-0 sm:gap-1 font-open-sans text-2xs sm:text-sm">
+        <ul className="flex gap-0 sm:gap-1 font-open-sans text-xs sm:text-sm items-center">
             {links.map((link) => (
                 <AnimateOnScroll
                     key={link.id}
@@ -64,7 +67,9 @@ function NavLinks() {
                     </li>
                 </AnimateOnScroll>
             ))}
-            <ThemeToggle />
+            <li className="ml-1">
+                <ThemeToggle />
+            </li>
         </ul>
     );
 }

@@ -170,9 +170,9 @@ const SuitShopVideo = () => {
                             />
 
                             {/* circle */}
-                            <div
+                            {/* <div
                                 className={`absolute -top-10 -right-10 w-32 h-32 rounded-full ${feature.bgColor} opacity-5 group-hover:opacity-25 transition-all duration-500 group-hover:scale-110`}
-                            />
+                            /> */}
 
                             <div className="relative z-10 grid grid-cols-[auto_1fr] items-start gap-1 md:gap-4">
                                 {/* آیکون با پس‌زمینه */}

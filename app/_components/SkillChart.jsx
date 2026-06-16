@@ -77,6 +77,7 @@ export default function SkillCharts() {
     const options = {
         responsive: true,
         maintainAspectRatio: true,
+        aspectRatio: 1.4,
         scales: {
             r: {
                 beginAtZero: true,
@@ -132,13 +133,12 @@ export default function SkillCharts() {
             id="skills"
             className=""
         >
-            <div className="container mx-auto max-w-4xl">
-                <div className="flex flex-col md:flex-row items-center justify-center gap-12">
+            <div className="container mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-12">
                     {/* Radar Chart */}
                     <AnimateOnScroll
                         direction="left"
                         delay={0.4}
-                        className="w-full max-w-md "
                     >
                         <div className="md:p-6">
                             <Radar

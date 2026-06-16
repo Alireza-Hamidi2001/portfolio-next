@@ -19,12 +19,12 @@ function ThemeToggle() {
     return (
         <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="ml-8 rounded-lg hover:scale-1.2 duration-200 transition-all"
+            className="ml-1 rounded-lg hover:scale-1.2 duration-200 transition-all"
         >
             {theme === "dark" ? (
-                <GoSun className="w-5 h-5 " />
+                <GoSun className="w-5 h-5" />
             ) : (
-                <LuMoon className="w-5 h-5  text-black" />
+                <LuMoon className="w-5 h-5" />
             )}
         </button>
     );
