@@ -1,5 +1,7 @@
+import { Suspense } from "react";
 import SuitShopDemo from "./SuitShopDemo.jsx";
 import SuitShopFeatures from "./SuitShopFeatures";
+import Spinner from "../Spinner.jsx";
 
 export default function SuitShopSection() {
     return (

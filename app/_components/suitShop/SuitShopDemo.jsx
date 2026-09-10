@@ -1,5 +1,7 @@
+import { Suspense } from "react";
 import { FaCartPlus, FaCheckCircle, FaDatabase, FaLock } from "react-icons/fa";
 import { HiOutlineSparkles } from "react-icons/hi";
+import Spinner from "../Spinner";
 
 export default function SuitShopDemo() {
     return (
@@ -23,17 +25,18 @@ export default function SuitShopDemo() {
                     </span>
                 </div>
             </div>
-
-            <div className="w-full mx-auto rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm mb-12 bg-black aspect-video">
-                <iframe
-                    src="https://player.cloudinary.com/embed/?cloud_name=direu398z&public_id=suit-shop_l7zxnq&autoplay=true&muted=true&loop=true&controls=false"
-                    allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-                    frameBorder="0"
-                    className="w-full h-full"
-                    loading="lazy"
-                    title="Suit Shop Demo Video"
-                />
-            </div>
+            <Suspense fallback={<Spinner />}>
+                <div className="w-full mx-auto rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm mb-12 bg-black aspect-video">
+                    <iframe
+                        src="https://player.cloudinary.com/embed/?cloud_name=direu398z&public_id=suit-shop_l7zxnq&autoplay=true&muted=true&loop=true&controls=false"
+                        allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                        frameBorder="0"
+                        className="w-full h-full"
+                        loading="lazy"
+                        title="Suit Shop Demo Video"
+                    />
+                </div>
+            </Suspense>
 
             <div className="text-center mt-8 pt-2 md:pt-4 border-t border-gray-200 dark:border-gray-700">
                 <div className="grid grid-cols-2 md:grid-cols-3 justify-center mb-6 md:mb-0 gap-2 md:gap-6 text-xs text-gray-500 dark:text-gray-400">

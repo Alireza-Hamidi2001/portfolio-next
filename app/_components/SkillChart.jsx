@@ -66,11 +66,11 @@ export default function SkillCharts() {
 
     // Tags data
     const skillTags = [
-        { name: "Python", delay: 0.8, bgColor: "bg-cyan-500" },
-        { name: "Vue.js", delay: 0.9, bgColor: "bg-amber-500" },
-        { name: "REST API", delay: 1, bgColor: "bg-red-500" },
-        { name: "Figma", delay: 1.1, bgColor: "bg-teal-500" },
-        { name: "MySQL", delay: 1.2, bgColor: "bg-lime-500" },
+        { name: "Python", delay: 0.6, bgColor: "bg-cyan-500" },
+        { name: "Vue.js", delay: 0.7, bgColor: "bg-amber-500" },
+        { name: "REST API", delay: 0.8, bgColor: "bg-red-500" },
+        { name: "Figma", delay: 0.9, bgColor: "bg-teal-500" },
+        { name: "MySQL", delay: 1, bgColor: "bg-lime-500" },
     ];
 
     // Chart options
@@ -164,7 +164,7 @@ export default function SkillCharts() {
                                             delay={skill.delay}
                                             className="w-full max-w-sm justify-center text-center sm:text-left grid grid-cols-2 items-center"
                                         >
-                                            <span className="font-open-sans font-bold">
+                                            <span className="font-open-sans font-bold text-[1.2rem]">
                                                 {skill.name}
                                             </span>
                                             <div className="w-40 sm:w-48 bg-gray-300 dark:bg-zinc-700 rounded-sm h-4">
@@ -175,7 +175,7 @@ export default function SkillCharts() {
                                                     }}
                                                 ></div>
                                             </div>
-                                            <span className="text-sm text-teal-700 dark:text-teal-500">
+                                            <span className="text-teal-700 dark:text-teal-500 text-[1.2rem]">
                                                 {skill.percentage}%
                                             </span>
                                         </AnimateOnScroll>
@@ -185,7 +185,7 @@ export default function SkillCharts() {
                         </AnimateOnScroll>
 
                         {/* Skills Tags */}
-                        <div className="flex flex-wrap gap-2 mt-6">
+                        <div className="flex justify-center sm:justify-start flex-wrap gap-1 sm:gap-2 mt-6">
                             {skillTags.map((tag, index) => (
                                 <AnimateOnScroll
                                     key={index}
@@ -194,7 +194,7 @@ export default function SkillCharts() {
                                     className="flex flex-wrap gap-2 mt-6"
                                 >
                                     <span
-                                        className={`${tag.bgColor} px-3 py-1 text-white dark:text-black rounded-full text-xs sm:text-sm`}
+                                        className={`${tag.bgColor} px-3 py-1 text-white dark:text-black rounded-sm text-xs font-semibold sm:text-sm`}
                                     >
                                         {tag.name}
                                     </span>

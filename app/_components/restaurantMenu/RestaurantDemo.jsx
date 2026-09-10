@@ -26,7 +26,7 @@ export default function RestaurantDemo() {
 
             <div className="w-full mx-auto rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm mb-12 bg-black aspect-video">
                 <iframe
-                    src="https://player.cloudinary.com/embed/?cloud_name=direu398z&public_id=suit-shop_l7zxnq&autoplay=true&muted=true&loop=true&controls=false"
+                    src="https://res.cloudinary.com/direu398z/video/upload/v1789062727/restaurant-NEXTjs-video_dvdlh2.mp4"
                     allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
                     frameBorder="0"
                     className="w-full h-full"

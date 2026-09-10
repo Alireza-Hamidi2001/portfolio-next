@@ -192,6 +192,26 @@
     }
 }
 
+.spinner {
+    margin: 4.75rem auto 1.6rem auto;
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid var(--color-primary-900);
+    border-right-color: var(--color-primary-200);
+    animation: rotate 1s infinite linear;
+}
+
+.spinner-mini {
+    margin: 0;
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px solid var(--color-primary-200);
+    border-right-color: transparent;
+    animation: rotate 1s infinite linear;
+}
+
 .waving-hand {
     animation: wave 2.5s ease-in-out infinite;
     transform-origin: bottom center;
@@ -216,4 +236,10 @@
     height: 8px;
     }
 
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(1turn);
+    }
 }
