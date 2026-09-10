@@ -9,7 +9,7 @@ function LearnMore() {
     const [showModal, setShowModal] = useState(false);
 
     function handleShowModal() {
-        setShowModal(!showModal);
+        setShowModal((prev) => !prev);
     }
 
     return (

@@ -41,7 +41,7 @@ export default function SkillCharts() {
                 borderWidth: 2,
 
                 // تنظیمات نقاط (دایره‌ها)
-                pointBackgroundColor: "#ffde67",
+                pointBackgroundColor: "#a93d31",
                 pointBorderColor: "#ffffff",
                 pointBorderWidth: 0,
                 pointRadius: 4,
@@ -59,8 +59,8 @@ export default function SkillCharts() {
         { name: "CSS / SASS", percentage: 95, delay: 0.3 },
         { name: "Tailwind CSS", percentage: 95, delay: 0.4 },
         { name: "JavaScript", percentage: 90, delay: 0.5 },
-        { name: "React", percentage: 85, delay: 0.6 },
-        { name: "Next.js", percentage: 80, delay: 0.7 },
+        { name: "React", percentage: 90, delay: 0.6 },
+        { name: "Next.js", percentage: 85, delay: 0.7 },
         { name: "Git", percentage: 90, delay: 0.8 },
     ];
 

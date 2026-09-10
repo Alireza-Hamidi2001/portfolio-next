@@ -1,7 +1,8 @@
 import AnimatedText from "./AnimatedText";
 import AnimateOnScroll from "./AnimateOnScroll";
 import Gallery from "./Gallery";
-import SuitShopVideo from "./SuitShopVideo";
+import RestaurantMenuSection from "./restaurantMenu/RestaurantMenuSection";
+import SuitShopSection from "./suitShop/SuitShopSection";
 
 function Projects() {
     return (
@@ -18,7 +19,8 @@ function Projects() {
                 direction="bottom"
             />
 
-            <SuitShopVideo />
+            <SuitShopSection />
+            <RestaurantMenuSection />
 
             <AnimateOnScroll
                 direction="bottom"

@@ -201,3 +201,19 @@
 .learn-more-btn {
     animation: learnBtn 1s ease-in-out infinite;
 }
+
+
+@supports (scrollbar-color: auto) {
+  * {
+    scrollbar-color: #353535 rgb(187, 186, 186); 
+    scrollbar-width: thin;
+    }
+}
+
+@supports selector(::-webkit-scrollbar) {
+  *::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px;
+    }
+
+}

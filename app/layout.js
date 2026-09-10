@@ -15,11 +15,11 @@ import {
 } from "./fonts";
 
 export const metadata = {
-    title: "Alireza Hamidi | Developer",
+    title: "Alireza Hamidi",
     description:
         "Front-End Developer specializing in Next.js, React, and Tailwind CSS. Master's student in Computer Engineering with Meta and University of Michigan certifications.",
     keywords:
-        "Front-End Developer, Next.js, React, Tailwind CSS, Web Developer, Portfolio",
+        "Front-End Developer, Next.js, React, Tailwind CSS, Web Developer, Portfolio , Computer , Computer Engineer",
     authors: [{ name: "Alireza Hamidi" }],
     openGraph: {
         title: "Alireza Hamidi | Developer Portfolio",
@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
     return (
         <html
             lang="en"
-            suppressHydrationWarning // ← این رو اضافه کن (قبلاً نداشتی)
+            suppressHydrationWarning
             className={`${lime.variable} ${comic.variable} ${caveat.variable} ${coiny.variable} ${openSans.variable} ${arizonia.variable} ${audioWide.variable} ${courgette.variable} ${kottaOne.variable} ${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
             <body
                 suppressHydrationWarning

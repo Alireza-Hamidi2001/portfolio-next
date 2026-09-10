@@ -3,11 +3,10 @@
 import { HiAcademicCap } from "react-icons/hi2";
 import { GrCertificate } from "react-icons/gr";
 import { MdOutlineQuestionMark } from "react-icons/md";
-import { IoCloseOutline } from "react-icons/io5";
+import { IoCloseCircleSharp, IoCloseOutline } from "react-icons/io5";
 import { useEffect } from "react";
 
 export default function ModalMoreMe({ onClose }) {
-    // Close modal with Escape key
     useEffect(() => {
         const handleEscape = (e) => {
             if (e.key === "Escape") {
@@ -18,7 +17,7 @@ export default function ModalMoreMe({ onClose }) {
 
         // Prevent body scrolling when modal is open
         document.body.style.overflow = "hidden";
-        document.body.style.paddingRight = "0px"; // جلوگیری از اسکرول افقی
+        document.body.style.paddingRight = "0px";
 
         return () => {
             document.removeEventListener("keydown", handleEscape);
@@ -37,10 +36,10 @@ export default function ModalMoreMe({ onClose }) {
     return (
         <>
             <div
-                className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/30 backdrop-blur-md overflow-x-hidden"
+                className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/30 backdrop-blur-lg overflow-x-hidden"
                 onClick={handleBackdropClick}
             >
-                <div className="relative w-[90vw] sm:w-[80rem] md:w-[50rem] max-w-2xl max-h-[90vh] bg-white dark:bg-zinc-950 border border-white/20 rounded-2xl shadow-2xl overflow-hidden flex flex-col">
+                <div className="relative w-[90vw] sm:w-[80rem] md:w-[50rem] max-w-2xl max-h-[90vh] bg-white/60 dark:bg-zinc-950/90 border border-white/20 rounded-xl shadow-2xl overflow-hidden flex flex-col">
                     {/* Header */}
                     <div className="flex items-center justify-between p-3 sm:p-4 md:p-6 pb-2 sm:pb-3 md:pb-0 flex-shrink-0">
                         <div className="inline-block min-w-0">
@@ -51,9 +50,9 @@ export default function ModalMoreMe({ onClose }) {
                         </div>
                         <button
                             onClick={onClose}
-                            className="p-1.5 sm:p-2 rounded-full bg-gray-100 dark:bg-zinc-800 hover:bg-gray-200 dark:hover:bg-zinc-700 transition-colors flex-shrink-0 ml-2"
+                            className="p-1.5 sm:p-2 rounded-full ml-2"
                         >
-                            <IoCloseOutline className="w-5 h-5 sm:w-6 sm:h-6 text-gray-600 dark:text-gray-300" />
+                            <IoCloseCircleSharp className="w-7 h-7 cursor-pointer sm:w-9 sm:h-9 text-red-400 hover:text-red-500 transition-all duration-300" />
                         </button>
                     </div>
 
@@ -67,7 +66,7 @@ export default function ModalMoreMe({ onClose }) {
                             </p>
 
                             {/* Academic Background */}
-                            <div className="my-4 sm:my-6 p-3 sm:p-4 bg-gray-50 dark:bg-zinc-800/50 rounded-lg">
+                            <div className="my-4 sm:my-6 p-3 sm:p-4 bg-gray-50/70 dark:bg-zinc-800/50 rounded-lg">
                                 <div className="inline-block">
                                     <div className="flex items-center gap-2 mb-2">
                                         <HiAcademicCap className="w-5 h-5 sm:w-6 sm:h-6 text-blue-500 flex-shrink-0" />
@@ -98,7 +97,7 @@ export default function ModalMoreMe({ onClose }) {
                             </div>
 
                             {/* Certifications */}
-                            <div className="my-4 sm:my-6 p-3 sm:p-4 bg-gray-50 dark:bg-zinc-800/50 rounded-lg">
+                            <div className="my-4 sm:my-6 p-3 sm:p-4 bg-gray-50/70 dark:bg-zinc-800/50 rounded-lg">
                                 <div className="inline-block">
                                     <div className="flex items-center gap-2 mb-2">
                                         <GrCertificate className="w-5 h-5 sm:w-6 sm:h-6 text-green-500 flex-shrink-0" />
@@ -121,7 +120,7 @@ export default function ModalMoreMe({ onClose }) {
                             </div>
 
                             {/* More About Me */}
-                            <div className="my-4 sm:my-6 p-3 sm:p-4 bg-gray-50 dark:bg-zinc-800/50 rounded-lg">
+                            <div className="my-4 sm:my-6 p-3 sm:p-4 bg-gray-50/70 dark:bg-zinc-800/50 rounded-lg">
                                 <div className="inline-block">
                                     <div className="flex items-center gap-2 mb-2">
                                         <MdOutlineQuestionMark className="w-5 h-5 sm:w-6 sm:h-6 text-orange-500 flex-shrink-0" />
