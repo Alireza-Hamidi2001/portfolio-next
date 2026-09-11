@@ -1,15 +1,13 @@
-"use client";
-
 import { TbLayoutDashboard } from "react-icons/tb";
 import AnimateOnScroll from "../AnimateOnScroll";
-import { features, Restaurant_features } from "../Features";
+import { Restaurant_features } from "../Features";
 
 export default function RestaurantFeatures() {
     return (
         <div className="max-w-5xl mx-auto">
             <AnimateOnScroll
-                direction="top"
-                delay={0.1}
+                // direction="top"
+                // delay={0.1}
                 className="w-full flex items-center justify-center gap-2 mb-6"
             >
                 <TbLayoutDashboard className="w-6 h-6 text-gray-700 dark:text-gray-300" />
@@ -25,8 +23,8 @@ export default function RestaurantFeatures() {
                 {Restaurant_features.map((feature, idx) => (
                     <AnimateOnScroll
                         key={idx}
-                        direction={feature.direction}
-                        delay={feature.delay}
+                        // direction={feature.direction}
+                        // delay={feature.delay}
                         className="relative group bg-white/30 backdrop-blur-[6px] dark:bg-zinc-900/80 p-2 rounded-xl shadow-sm transition-all duration-300 overflow-hidden cursor-default border border-gray-200 dark:border-gray-700"
                     >
                         <div

@@ -11,7 +11,7 @@ import { MdOutlineAdminPanelSettings } from "react-icons/md";
 
 export const SuitShop_features = [
     {
-        direction: "bottom",
+        // direction: "bottom",
         // delay: 0.05,
         icon: FaLock,
         title: "Authentication & Authorization",
@@ -21,7 +21,7 @@ export const SuitShop_features = [
         bgColor: "bg-blue-500",
     },
     {
-        direction: "top",
+        // direction: "top",
         // delay: 0.1,
         icon: FaUserCircle,
         title: "User Panel",
@@ -31,7 +31,7 @@ export const SuitShop_features = [
         bgColor: "bg-green-500",
     },
     {
-        direction: "bottom",
+        // direction: "bottom",
         // delay: 0.25,
         icon: MdOutlineAdminPanelSettings,
         title: "Admin Panel",
@@ -41,7 +41,7 @@ export const SuitShop_features = [
         bgColor: "bg-purple-500",
     },
     {
-        direction: "top",
+        // direction: "top",
         // delay: 0.3,
         icon: FaDatabase,
         title: "Database & Backend",
@@ -51,7 +51,7 @@ export const SuitShop_features = [
         bgColor: "bg-yellow-500",
     },
     {
-        direction: "bottom",
+        // direction: "bottom",
         // delay: 0.35,
         icon: FaCommentDots,
         title: "Comment System",
@@ -61,7 +61,7 @@ export const SuitShop_features = [
         bgColor: "bg-indigo-500",
     },
     {
-        direction: "top",
+        // direction: "top",
         // delay: 0.4,
         icon: FaFilter,
         title: "Filtering & Navigation",
@@ -71,7 +71,7 @@ export const SuitShop_features = [
         bgColor: "bg-pink-500",
     },
     {
-        direction: "bottom",
+        // direction: "bottom",
         // delay: 0.45,
         icon: FaTags,
         title: "Dynamic Meta Tags",
@@ -81,7 +81,7 @@ export const SuitShop_features = [
         bgColor: "bg-orange-500",
     },
     {
-        direction: "top",
+        // direction: "top",
         // delay: 0.5,
         icon: FaEdit,
         title: "Post Management",
@@ -101,7 +101,7 @@ export const SuitShop_features = [
 
 export const Restaurant_features = [
     {
-        direction: "bottom",
+        // direction: "bottom",
         // delay: 0.05,
         icon: FaLock,
         title: "Authentication & Authorization",
@@ -111,7 +111,7 @@ export const Restaurant_features = [
         bgColor: "bg-blue-500",
     },
     {
-        direction: "top",
+        // direction: "top",
         // delay: 0.1,
         icon: FaUserCircle,
         title: "User Panel",
@@ -121,7 +121,7 @@ export const Restaurant_features = [
         bgColor: "bg-green-500",
     },
     {
-        direction: "bottom",
+        // direction: "bottom",
         // delay: 0.25,
         icon: MdOutlineAdminPanelSettings,
         title: "Admin Panel",
@@ -131,7 +131,7 @@ export const Restaurant_features = [
         bgColor: "bg-purple-500",
     },
     {
-        direction: "top",
+        // direction: "top",
         // delay: 0.3,
         icon: FaDatabase,
         title: "Database & Backend",
@@ -141,7 +141,7 @@ export const Restaurant_features = [
         bgColor: "bg-yellow-500",
     },
     {
-        direction: "top",
+        // direction: "top",
         // delay: 0.4,
         icon: FaFilter,
         title: "Filtering & Navigation",
@@ -151,7 +151,7 @@ export const Restaurant_features = [
         bgColor: "bg-pink-500",
     },
     {
-        direction: "bottom",
+        // direction: "bottom",
         // delay: 0.45,
         icon: FaTags,
         title: "Dynamic Meta Tags",
