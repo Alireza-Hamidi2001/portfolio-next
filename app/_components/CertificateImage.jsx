@@ -87,11 +87,11 @@ function CourseList({ courses, title, subtitle, isVisible }) {
                             transition={{ delay: 0.3 }}
                             className="mt-6 grid grid-cols-1 sm:grid-cols-2 pt-4 border-t border-gray-700/50"
                         >
-                            <span className="flex sm:mx-auto items-center gap-2 text-red-500 text-sm sm:text-[1rem] font-medium">
+                            <span className="flex items-center gap-2 text-red-600 text-sm sm:text-[1rem] font-medium">
                                 <FaBookOpen className="w-4 h-4" />
                                 {courses.length} Courses
                             </span>
-                            <span className="flex sm:mx-auto items-center gap-2 text-gray-800 text-sm sm:text-[1rem]">
+                            <span className="flex items-center gap-2 text-red-500 mb-6 sm:mb-0 text-sm sm:text-[1rem]">
                                 <HiOutlineSparkles className="w-4 h-4" />
                                 Complete Specialization
                             </span>
