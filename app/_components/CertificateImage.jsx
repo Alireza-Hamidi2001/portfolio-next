@@ -85,7 +85,7 @@ function CourseList({ courses, title, subtitle, isVisible }) {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.3 }}
-                            className="mt-6 grid grid-cols-1 sm:grid-cols-2 pt-4 border-t border-gray-700/50"
+                            className="mt-6 grid grid-cols-1 justify-center sm:grid-cols-2 pt-4 border-t border-gray-700/50"
                         >
                             <span className="flex items-center gap-2 text-red-600 text-sm sm:text-[1rem] font-medium">
                                 <FaBookOpen className="w-4 h-4" />
