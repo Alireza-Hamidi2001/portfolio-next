@@ -8,8 +8,6 @@ import { FaGraduationCap, FaBookOpen } from "react-icons/fa";
 import { HiOutlineSparkles } from "react-icons/hi";
 import { certificates } from "./Variables";
 
-
-
 function CourseList({ courses, title, subtitle, isVisible }) {
     return (
         <AnimatePresence>
@@ -47,8 +45,8 @@ function CourseList({ courses, title, subtitle, isVisible }) {
                             className="text-center mb-6"
                         >
                             <div className="flex items-center justify-center gap-3 mb-4 bg-white/30">
-                                <FaGraduationCap className="w-15 h-15 text-red-400" />
-                                <h3 className="text-2xl sm:text-4xl md:text-5xl font-bold bg-linear-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+                                <FaGraduationCap className="w-12 h-12 text-red-400" />
+                                <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-linear-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
                                     {title}
                                 </h3>
                             </div>
@@ -70,7 +68,7 @@ function CourseList({ courses, title, subtitle, isVisible }) {
                                     initial={{ opacity: 0, x: -20 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ delay: 0.1 + idx * 0.03 }}
-                                    className="flex items-center gap-1  sm:gap-2 p-1 sm:p-2 rounded-lg bg-white/50 hover:bg-white/10 transition-all group"
+                                    className="flex items-center gap-1  sm:gap-2 p-1 sm:p-2 rounded-lg mx-auto sm:mx-0 bg-white/50 hover:bg-white/10 transition-all group"
                                 >
                                     <span className="text-red-500 text-[1rem] font-bold min-w-[20px]">
                                         {String(idx + 1).padStart(2, "0")}
@@ -87,13 +85,13 @@ function CourseList({ courses, title, subtitle, isVisible }) {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.3 }}
-                            className="mt-6 flex items-center justify-center gap-6 pt-4 border-t border-gray-700/50"
+                            className="mt-6 grid grid-cols-1 sm:grid-cols-2 pt-4 border-t border-gray-700/50"
                         >
-                            <span className="flex items-center gap-2 text-red-500 text-sm sm:text-[1rem] font-medium">
+                            <span className="flex sm:mx-auto items-center gap-2 text-red-500 text-sm sm:text-[1rem] font-medium">
                                 <FaBookOpen className="w-4 h-4" />
                                 {courses.length} Courses
                             </span>
-                            <span className="flex items-center gap-2 text-blue-600 text-sm sm:text-[1rem]">
+                            <span className="flex sm:mx-auto items-center gap-2 text-gray-800 text-sm sm:text-[1rem]">
                                 <HiOutlineSparkles className="w-4 h-4" />
                                 Complete Specialization
                             </span>
