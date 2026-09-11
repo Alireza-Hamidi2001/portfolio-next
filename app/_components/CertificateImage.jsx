@@ -68,7 +68,7 @@ function CourseList({ courses, title, subtitle, isVisible }) {
                                     initial={{ opacity: 0, x: -20 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ delay: 0.1 + idx * 0.03 }}
-                                    className="flex items-center gap-1  sm:gap-2 p-1 sm:p-2 rounded-lg mx-auto sm:mx-0 bg-white/50 hover:bg-white/10 transition-all group"
+                                    className="flex items-center gap-1  sm:gap-2 p-1 sm:p-2 rounded-lg mx-auto sm:mx-0 bg-white/50 hover:bg-white transition-all group"
                                 >
                                     <span className="text-red-500 text-[1rem] font-bold min-w-[20px]">
                                         {String(idx + 1).padStart(2, "0")}
