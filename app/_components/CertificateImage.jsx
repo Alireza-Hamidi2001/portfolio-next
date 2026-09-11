@@ -1,4 +1,3 @@
-// components/CertificateImage.jsx
 "use client";
 import { useState } from "react";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
@@ -7,39 +6,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { PiHandTap } from "react-icons/pi";
 import { FaGraduationCap, FaBookOpen } from "react-icons/fa";
 import { HiOutlineSparkles } from "react-icons/hi";
+import { certificates } from "./Variables";
 
-const certificates = [
-    {
-        id: 1,
-        url: "https://res.cloudinary.com/direu398z/image/upload/v1781504392/meta-coursera_uvlvqb.png",
-        title: "Meta",
-        subtitle: "Front-End Developer Professional Certificate",
-        courses: [
-            "Introduction to Front-End Development",
-            "Programming with JavaScript",
-            "Version Control",
-            "HTML and CSS in depth",
-            "React Basics",
-            "Advanced React",
-            "Principles of UX/UI Design",
-            "Front-End Developer Capstone",
-            "Coding Interview Preparation",
-        ],
-    },
-    {
-        id: 2,
-        url: "https://res.cloudinary.com/direu398z/image/upload/v1781504948/michigan-coursera_paan8p.png",
-        title: "Michigan",
-        subtitle: "Web Design for Everybody Specialization",
-        courses: [
-            "Introduction to HTML5",
-            "Introduction to CSS3",
-            "Interactivity with JavaScript",
-            "Advanced Styling with Responsive Design",
-            "Web Design for Everybody Capstone",
-        ],
-    },
-];
+
 
 function CourseList({ courses, title, subtitle, isVisible }) {
     return (
@@ -67,7 +36,7 @@ function CourseList({ courses, title, subtitle, isVisible }) {
                         damping: 25,
                         duration: 0.2,
                     }}
-                    className="absolute inset-0 z-20 flex items-center justify-center bg-black/70 backdrop-blur-sm rounded-lg p-2 sm:p-4 md:p-8 overflow-y-auto"
+                    className="absolute inset-0 z-20 flex items-center justify-center bg-white/30 backdrop-blur-sm rounded-lg p-2 sm:p-4 md:p-8 overflow-y-auto"
                 >
                     <div className="w-full max-h-full">
                         {/* header , subHeader */}
@@ -77,19 +46,18 @@ function CourseList({ courses, title, subtitle, isVisible }) {
                             transition={{ delay: 0.1 }}
                             className="text-center mb-6"
                         >
-                            <div className="flex items-center justify-center gap-3 mb-2">
-                                <FaGraduationCap className="w-8 h-8 text-red-400" />
+                            <div className="flex items-center justify-center gap-3 mb-4 bg-white/30">
+                                <FaGraduationCap className="w-15 h-15 text-red-400" />
                                 <h3 className="text-2xl sm:text-4xl md:text-5xl font-bold bg-linear-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
                                     {title}
                                 </h3>
                             </div>
-                            <p className="text-gray-300 text-xs sm:text-sm md:text-base font-light tracking-wide">
-                                {subtitle}
+                            <p className="text-gray-800 text-sm sm:text-[1.2rem] font-semibold tracking-wide">
+                                &bull; {subtitle}
                             </p>
                             <div className="w-24 h-0.5 bg-linear-to-r from-red-400 to-transparent mx-auto mt-3" />
                         </motion.div>
 
-                        {/* coursers list */}
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
@@ -102,12 +70,12 @@ function CourseList({ courses, title, subtitle, isVisible }) {
                                     initial={{ opacity: 0, x: -20 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ delay: 0.1 + idx * 0.03 }}
-                                    className="flex items-center gap-1 sm:gap-2 p-1 sm:p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all group"
+                                    className="flex items-center gap-1  sm:gap-2 p-1 sm:p-2 rounded-lg bg-white/50 hover:bg-white/10 transition-all group"
                                 >
-                                    <span className="text-red-400 text-xs font-bold min-w-[20px]">
+                                    <span className="text-red-500 text-[1rem] font-bold min-w-[20px]">
                                         {String(idx + 1).padStart(2, "0")}
                                     </span>
-                                    <span className="text-gray-200 text-xs sm:text-sm md:text-base group-hover:text-white transition-colors">
+                                    <span className="text-gray-800 font-semibold text-xs sm:text-sm md:text-base transition-colors">
                                         {course}
                                     </span>
                                 </motion.div>
@@ -121,11 +89,11 @@ function CourseList({ courses, title, subtitle, isVisible }) {
                             transition={{ delay: 0.3 }}
                             className="mt-6 flex items-center justify-center gap-6 pt-4 border-t border-gray-700/50"
                         >
-                            <span className="flex items-center gap-2 text-red-400 text-xs sm:text-sm font-medium">
+                            <span className="flex items-center gap-2 text-red-500 text-sm sm:text-[1rem] font-medium">
                                 <FaBookOpen className="w-4 h-4" />
                                 {courses.length} Courses
                             </span>
-                            <span className="flex items-center gap-2 text-gray-400 text-xs sm:text-sm">
+                            <span className="flex items-center gap-2 text-blue-600 text-sm sm:text-[1rem]">
                                 <HiOutlineSparkles className="w-4 h-4" />
                                 Complete Specialization
                             </span>
@@ -212,7 +180,7 @@ function CertificateImage() {
 
                 {/* images */}
                 <div
-                    className="relative w-75 h-70 sm:w-160 sm:h-90 lg:w-220 lg:h-120 overflow-hidden rounded-2xl shadow-2xl group cursor-pointer"
+                    className="relative w-75 h-70 sm:w-160 sm:h-90 lg:w-220 lg:h-120 bg-white/80 dark:bg-white/10 overflow-hidden rounded-2xl shadow-2xl group cursor-pointer"
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                 >

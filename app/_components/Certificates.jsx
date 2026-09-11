@@ -1,4 +1,3 @@
-// components/Certificates.jsx (Server Component)
 import AnimatedText from "./AnimatedText";
 import CertificateImage from "./CertificateImage";
 import AnimateOnScroll from "./AnimateOnScroll";
